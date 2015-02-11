@@ -1,0 +1,18 @@
+#results,
+#error {
+  display: none;
+  margin: 16px auto;
+}
+p {
+  font-weight: bold;
+}
+span {
+  display: block;
+  font-weight: normal;
+}
+
+#error p {
+  font-size: 200%;
+  font-family: 'Rock Salt', cursive;
+  text-transform: uppercase;
+}

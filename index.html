@@ -1,9 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Coin Combo Thingamabob</title>
+    <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
   </head>
   <body>
-
+    <div class="container">
+      <h1>Coin Combo Thingamabob</h1>
+      <form id="coinCombo">
+        <label for="cents">Enter amount in cents:</label>
+        <input id="cents">
+        <button type="submit" class="btn">Calculate</button>
+      </form>
+      <div id="results">
+        <p>Your change is: <span id="pennies"></span><span id="nickels"></span><span id="dimes"></span><span id="quarters"></span></p>
+      </div>
+      <div id="error">
+        <p>You have no money!</p>
+      </div>
+    </div>
   </body>
 </html>
