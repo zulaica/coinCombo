@@ -1,9 +1,31 @@
-var coinCombination = function(cents){
+var coinCombo = function(cents){
   var pennies = 0;
   var nickels = 0;
   var dimes = 0;
   var quarters = 0;
   var cents_array = []
+
+  if (cents > 25){
+    while(cents >24){
+      quarters++;
+      cents = cents-25;
+    };
+  };
+
+  if (cents > 10) {
+    while(cents > 9) {
+      dimes++;
+      cents = cents - 10;
+    };
+  };
+
+  if(cents>5){
+    while(cents>4){
+      nickels++;
+      cents = cents-5;
+    };
+  };
+
 
   if (cents<5){
     while (cents > 0) {
@@ -12,10 +34,8 @@ var coinCombination = function(cents){
     };
   };
 
-  cents_array.push(pennies);
-  cents_array.push(nickels);
-  cents_array.push(dimes);
-  cents_array.push(quarters);
+  cents_array.push(pennies, nickels, dimes, quarters);
+
   return cents_array;
 
 
